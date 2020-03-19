@@ -18,6 +18,46 @@ body {
   height: 100%;
 }
 
+.all .banner_1 .container .box .text {
+  padding: 26% 0px 0px 0;
+}
+
+.all .banner_1 .container .box .text .text_glow h1 {
+  margin: 0;
+  padding: 0;
+  color: #111;
+  font-size: 16em;
+  font-weight: bold;
+}
+
+.all .banner_1 .container .box .text .text_glow h1 span {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+}
+
+.all .banner_1 .container .box .text .text_glow h1 span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.all .banner_1 .container .box .text .text_glow h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.60s;
+          animation-delay: 0.60s;
+}
+
+.all .banner_1 .container .box .text .text_glow h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+}
+
+.all .banner_1 .container .box .text .text_glow h1 span:nth-child(4) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
 .all .banner_1 .container .box .pork {
   padding: 0 0 0 80%;
 }
@@ -36,5 +76,35 @@ body {
 
 .all .banner_1 .container .box .size img {
   width: 300px;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    color: #fff;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    text-shadow: 0 0 10px #ff1e00, 0 0 20px #ff1e00, 0 0 40px #ff1e00, 0 0 80px #ff1e00, 0 0 120px #ff1e00, 0 0 200px #ff1e00, 0 0 300px #ff1e00, 0 0 400px #ff1e00;
+  }
+  90% {
+    color: rgba(0, 0, 0, 0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+@keyframes animate {
+  100% {
+    color: #fff;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    text-shadow: 0 0 10px #ff1e00, 0 0 20px #ff1e00, 0 0 40px #ff1e00, 0 0 80px #ff1e00, 0 0 120px #ff1e00, 0 0 200px #ff1e00, 0 0 300px #ff1e00, 0 0 400px #ff1e00;
+  }
+  90% {
+    color: rgba(0, 0, 0, 0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    text-shadow: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

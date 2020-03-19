@@ -89,7 +89,16 @@
         <div class="banner_1">
             <div class="container">
                 <ul id="scene" class="box">
-                    <li class="layer text" data-depth=".1"><img src="/img/text.png"></li>
+                    <li class="layer text" data-depth=".1">
+                        <div class="text_glow">
+                            <h1>
+                                <span>赤</span>
+                                <span>鬼</span>
+                                <span>牛</span>
+                                <span>排</span>
+                            </h1>
+                        </div>
+                    </li>
                     <li class="layer pork size" data-depth="1"><img src="/img/pork.png"></li>
                     <li class="layer steak size" data-depth="-1"><img src="/img/steak.png"></li>
                     <li class="layer steak_big size" data-depth="2"><img src="/img/steak_big.png"></li>
@@ -195,7 +204,7 @@
         var scene = document.getElementById('scene');
         parallaxInstance = new Parallax(scene);
     </script>
-  
+
 
 
 </body>
