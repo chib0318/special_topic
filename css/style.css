@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+body span::before {
+  content: unset;
+}
+
 .all {
   width: 100%;
 }

@@ -1,6 +1,12 @@
 body{
     margin: 0;
+    span{
+        &::before{
+            content: unset;
+        }
+    }
 }
+
 .all{
     width: 100%;
     .banner_1{
