@@ -28,12 +28,12 @@ body span::before {
 }
 
 .all .banner_1 .container .box .text {
-  padding: 29% 0px 0px 0;
+  padding: 37% 0px 0px 0;
   z-index: 2;
 }
 
 .all .banner_1 .container .box .text .text_glow {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 40px;
 }
 
@@ -81,8 +81,12 @@ body span::before {
   padding: 50% 0px 0px 33%;
 }
 
+.all .banner_1 .container .box .steak_big {
+  padding: 0 0 0 0;
+}
+
 .all .banner_1 .container .box .steak_2 {
-  padding: 40% 0 0 90%;
+  padding: 56% 0 0 90%;
 }
 
 .all .banner_1 .container .box .size {

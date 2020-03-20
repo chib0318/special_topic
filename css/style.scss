@@ -25,10 +25,10 @@ body{
             height: 100%;
             .box{
                 .text{
-                    padding: 29% 0px 0px 0;
+                    padding: 37% 0px 0px 0;
                     z-index: 2;
                     .text_glow{
-                        background-color: rgba(0, 0, 0, 0.7);
+                        background-color: rgba(0, 0, 0, 0.6);
                         border-radius: 40px;
                         h1{
                             margin: 0;
@@ -68,8 +68,11 @@ body{
                 .steak{
                     padding: 50% 0px 0px 33%;
                 }
+                .steak_big{
+                    padding: 0 0 0 0;
+                }
                 .steak_2{
-                    padding: 40% 0 0 90%;
+                    padding: 56% 0 0 90%;
                 }
                 .size{
                     margin-top: 100px;
