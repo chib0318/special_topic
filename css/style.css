@@ -1,10 +1,16 @@
 @font-face {
-  font-family: aaa;
-  src: url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+  font-family: 'Kosugi';
+  src: url("https://fonts.googleapis.com/css?family=Kosugi&display=swap");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 body span::before {
@@ -35,6 +41,7 @@ body span::before {
 .all .banner_1 .container .box .text .text_glow {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 40px;
+  margin: 0 0 0 -66px;
 }
 
 .all .banner_1 .container .box .text .text_glow h1 {
@@ -48,7 +55,7 @@ body span::before {
   display: table-cell;
   margin: 0;
   padding: 0;
-  font-family: aaa,serif;
+  font-family: 'Kosugi', sans-serif;
   -webkit-animation: animate 2s linear infinite;
           animation: animate 2s linear infinite;
 }
@@ -95,6 +102,10 @@ body span::before {
 
 .all .banner_1 .container .box .size img {
   width: 300px;
+}
+
+.all .carte {
+  padding: 122px 0;
 }
 
 @-webkit-keyframes animate {
