@@ -111,6 +111,7 @@ body span::before {
 
 .all .loading {
   margin: 72px 0px;
+  z-index: 2;
 }
 
 .all .blackandwhite {

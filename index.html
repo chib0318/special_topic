@@ -188,7 +188,7 @@
             </div>
           </section>
 
-          <div class="container-fluid blackandwhite">
+          <div class="container-fluid blackandwhite" id="blackandwhite">
             <section class="row">
                 <div class="pointer"></div>
               <div class="col-12 col-sm-6">
@@ -335,9 +335,15 @@
         // $(window).scroll(function () {
         //     console.log($(window).scrollTop());
         // });
-        $(document).mousemove(function(e){
-           
-          $('.blackandwhite .row .pointer').css({left:e.pageX,top:e.pageY-2850});
+        // var body_h = document.getElementsByClassName('banner_1');
+            // console.log($('.banner_1').outerHeight(true)+$('.loading').outerHeight(true));
+       
+        $('.blackandwhite').mousemove(function(e){
+            // if ($(window).scrollTop()+3994 > $('.banner_1').outerHeight(true)+$('.carte').outerHeight(true)+$('.loading').outerHeight(true)+$('.blackandwhite').outerHeight(true)) {
+
+            // }
+             $('.blackandwhite .row .pointer').css({left:e.pageX,top:e.pageY-2850});
+            
       })
     </script>
 
