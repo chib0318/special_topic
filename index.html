@@ -21,9 +21,11 @@
     <link rel="stylesheet" href="./assets/theme/css/style.css">
     <link rel="preload" as="style" href="./assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="./assets/mobirise/css/mbr-additional.css" type="text/css">
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/swiper-container.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -145,7 +147,46 @@
             </div>
 
         </section>
-        
+        <section class="swiper-container loading">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide slide1">
+                <div class="content">
+                  <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Shaun Matthews</p>
+                  <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+              </div>
+      
+              <div class="swiper-slide slide2">
+                <div class="content">
+                  <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Alexis Berry</p>
+                  <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+              </div>
+      
+              <div class="swiper-slide slide3">
+               
+                <div class="content">
+                  <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Billie	Pierce</p>
+                  <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+              </div>
+            
+              <div class="swiper-slide slide4">
+                <div class="content">
+                  <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Trevor	Copeland</p>
+                  <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+              </div>
+      
+              <div class="swiper-slide slide5">
+                <div class="content">
+                  <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Bernadette	Newman</p>
+                  <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+              </div>
+            </div>
+          </section>
 
         <!-- <section class="engine"><a href="https://mobirise.info/y">free html site templates</a></section> -->
         <section once="footers" class="cid-rTGgvs2CH1" id="footer7-0">
@@ -158,11 +199,6 @@
                 <div class="media-container-row align-center mbr-white">
                     <div class="row row-links">
                         <ul class="foot-menu">
-
-
-
-
-
                             <li class="foot-menu-item mbr-fonts-style display-7">
                                 <a class="text-white mbr-bold" href="#" target="_blank">About us</a>
                             </li>
@@ -182,11 +218,6 @@
                     </div>
                     <div class="row social-row">
                         <div class="social-list align-right pb-2">
-
-
-
-
-
 
                             <div class="soc-item">
                                 <a href="https://twitter.com/mobirise" target="_blank">
@@ -241,6 +272,7 @@
     <script src="./assets/touchswipe/jquery.touch-swipe.min.js"></script>
     <script src="./assets/theme/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -260,6 +292,35 @@
         // slidesToScroll: 2
       });
     });
+    let sliderSelector = '.swiper-container',
+        options = {
+          loop: true,
+          speed:800,
+          slidesPerView: 2, // or 'auto'
+          spaceBetween: 20,
+          centeredSlides : true,
+          effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+          coverflowEffect: {
+            rotate: 50, // Slide rotate in degrees
+            stretch: 0, // Stretch space between slides (in px)
+            depth: 50, // Depth offset in px (slides translate in Z axis)
+            modifier: 1, // Effect multipler
+            slideShadows : true // Enables slides shadows
+          },
+          grabCursor: true,
+          parallax: true,
+          on: {
+            imagesReady: function(){
+              this.el.classList.remove('loading');
+            }
+          }
+        };
+        let mySwiper = new Swiper(sliderSelector, options);
+        mySwiper.init();
+        $(window).scroll(function () {
+            console.log($(window).scrollTop());
+        
+        });
     </script>
 
 
