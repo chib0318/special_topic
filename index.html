@@ -188,6 +188,21 @@
             </div>
           </section>
 
+          <div class="container-fluid blackandwhite">
+            <section class="row">
+                <div class="pointer"></div>
+              <div class="col-12 col-sm-6">
+                <h1>赤鬼牛排關於我們</h1>
+              </div>
+              <div class="col-12 col-sm-6">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium ut explicabo nisi esse fugit? Totam deleniti at fuga incidunt nobis aliquid, labore, in temporibus voluptate asperiores aut ipsam dignissimos
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, perferendis? Deleniti dolor, itaque nostrum cupiditate doloribus eaque? Quidem rem minus rerum quae accusantium possimus, nihil ex, saepe reprehenderit voluptates distinctio?
+                </p>
+              </div>
+            </section>
+          </div>
+      
         <!-- <section class="engine"><a href="https://mobirise.info/y">free html site templates</a></section> -->
         <section once="footers" class="cid-rTGgvs2CH1" id="footer7-0">
 
@@ -317,10 +332,13 @@
         };
         let mySwiper = new Swiper(sliderSelector, options);
         mySwiper.init();
-        $(window).scroll(function () {
-            console.log($(window).scrollTop());
-        
-        });
+        // $(window).scroll(function () {
+        //     console.log($(window).scrollTop());
+        // });
+        $(document).mousemove(function(e){
+           
+          $('.blackandwhite .row .pointer').css({left:e.pageX,top:e.pageY-2850});
+      })
     </script>
 
 
