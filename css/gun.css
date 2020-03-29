@@ -1,0 +1,91 @@
+.gunbox .gun {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  cursor: url("../img/aim.png"), pointer;
+  background-image: url(http://i.imgur.com/hIhsx.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gunbox .gun span {
+  position: absolute;
+  width: 40px;
+  height: 38px;
+  background: url("../img/hole.png");
+  pointer-events: none;
+  -webkit-transform: translate(28px, 28px);
+          transform: translate(28px, 28px);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/dof-back.jpg");
+  /* Set a specific height */
+  height: 80vh;
+  position: relative;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
+}
+
+.parallax:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.front {
+  background: url("../img/dof-front.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 724px;
+  right: 3vw;
+  width: 50vw;
+  padding-bottom: 30%;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+.front:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+@-webkit-keyframes chib {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -1000%);
+            transform: translate(-50%, -1000%);
+    opacity: 0;
+  }
+}
+
+@keyframes chib {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -1000%);
+            transform: translate(-50%, -1000%);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=gun.css.map */
