@@ -1,3 +1,11 @@
+.loading {
+  background: #FF6100;
+  height: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
 .gunbox .gun {
   position: relative;
   width: 100%;
@@ -87,5 +95,15 @@
             transform: translate(-50%, -1000%);
     opacity: 0;
   }
+}
+
+@media (max-width: 991px) {
+  .btmb {
+    margin-bottom: 30px;
+  }
+}
+
+.cid-qTkzRZLJNu .navbar-dropdown.bg-color.transparent.opened {
+  padding-bottom: 45px;
 }
 /*# sourceMappingURL=gun.css.map */

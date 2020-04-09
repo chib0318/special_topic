@@ -1,4 +1,10 @@
-
+.loading{ 
+    background:#FF6100; //設定進度條的顏色 
+    height:5px; //設定進度條的高度 
+    position:fixed; //設定進度條跟隨螢幕滾動 
+    top:0; //將進度條固定在頁面頂部 
+    z-index:99999 //提高進度條的優先層級，避免被其他層遮擋 
+    } 
 .gunbox{
 
     .gun{
@@ -61,4 +67,13 @@
         transform: translate(-50%,-1000%);
         opacity: 0;
     }
+}
+@media (max-width: 991px){
+    .btmb{
+        margin-bottom: 30px;
+    }
+    
+}
+.cid-qTkzRZLJNu .navbar-dropdown.bg-color.transparent.opened {
+    padding-bottom: 45px;
 }
