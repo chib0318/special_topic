@@ -72,8 +72,13 @@
     .btmb{
         margin-bottom: 30px;
     }
+    .btnRGB a{
+        position: unset !important;
+        padding: 10px;
+        &::before{
+            background: unset !important;
+            padding: 20px;
+        }
+      }
     
-}
-.cid-qTkzRZLJNu .navbar-dropdown.bg-color.transparent.opened {
-    padding-bottom: 45px;
 }
